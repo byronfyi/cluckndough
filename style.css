@@ -1,0 +1,46 @@
+@import url('normalize.css');
+
+@font-face {
+  font-family: "Marker Felt";
+  font-weight: 400;
+  src: url("./Marker-Felt.ttf") format("truetype");
+}
+
+:root {
+  --orange: #f47c2c;
+  --black: #000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Marker Felt', sans-serif;
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  max-width: 467px;
+  height: auto;
+}
