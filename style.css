@@ -9,6 +9,7 @@
 :root {
   --orange: #f47c2c;
   --black: #000;
+  --white: #fff;
 }
 
 *,
@@ -18,29 +19,223 @@
 }
 
 body {
-  font-family: 'Marker Felt', sans-serif;
-  background-color: var(--orange);
-  color: var(--black);
+  font-family: sans-serif;
+  font-weight: 400;
+  background: url(./images/bg-icons.png) no-repeat bottom center var(--black);
+  color: var(--white);
+  min-height: 1140px;
+  overflow-x: hidden;
 }
 
 h1 {
   margin: 0;
   font-size: 3rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
+p {
+  margin-top: 0;
+}
+
+.header {
+  background: url('./images/bg-header.png') repeat-x top center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 140px;
+}
+
+.btn {
+  font-weight: 700;
+  display: inline-block;
+  padding: 1rem;
+  background-color: var(--white);
+  color: var(--black);
+  text-decoration: underline;
+  border: 3px solid var(--black);
+  border-radius: 4rem;
+  box-shadow: 0.5rem 0.5rem 0 var(--black);
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.header-btn {
+  position: absolute;
+  top: 0;
+  right: 1.5rem;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  transform: translate3d(0.25rem, 0.25rem, 0);
+  box-shadow: 0.25rem 0.25rem 0 var(--black);
+}
+
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-top: 8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .logo {
   display: block;
-  max-width: 467px;
+  max-width: 200px;
   height: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.col {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.icon-chicken,
+.icon-pizza,
+.icon-chips {
+  width: 70px;
+  margin-bottom: 0.5rem;
+}
+
+.icon-chips {
+  width: 60px;
+}
+
+.featured {
+  font-family: 'Marker Felt', sans-serif;
+}
+
+.featured span {
+  display: block;
+}
+
+.text {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  max-width: 74ch;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.social {
+  padding-left: 0;
+  margin: 5rem 0 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social li {
+  padding: 0 0.5rem;
+}
+
+.social-btn {
+  padding: 0.5rem 2rem;
+  box-shadow: 0.375rem 0.375rem 0 var(--orange);
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  transform: translate3d(0.125rem, 0.125rem, 0);
+  box-shadow: 0.25rem 0.25rem 0 var(--orange);
+}
+
+.social svg {
+  width: 30px;
+  height: 30px;
+  color: var(--black);
+}
+
+.images-left,
+.images-right {
+  position: absolute;
+  top: -40px;
+  z-index: -1;
+}
+
+.images-left {
+  left: -150px;
+}
+
+.images-right {
+  right: -150px;
+}
+
+.image {
+  display: block;
+  border: 3px solid var(--black);
+}
+
+.image-2,
+.image-4 {
+  margin-top: -30px;
+  position: relative;
+  z-index: -1;
+}
+
+.image-2 {
+  margin-left: -20px;
+}
+
+.image-4 {
+  margin-left: 20px;
+}
+
+.relative {
+  position: relative;
+}
+
+.text-lg {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+.text-md {
+  font-size: 1.875rem;
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.rotate-left {
+  transform: rotate(-3deg);
+}
+
+.rotate-right {
+  transform: rotate(3deg);
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
