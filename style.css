@@ -34,6 +34,7 @@ body {
   background: url(./images/bg-icons.png) no-repeat bottom center var(--black);
   color: var(--white);
   min-height: 1140px;
+  min-width: 375px;
   overflow-x: hidden;
 }
 
@@ -122,6 +123,7 @@ p {
 .col {
   text-align: center;
   padding: 0 2rem;
+  margin-top: 1rem;
 }
 
 .icon-chicken,
@@ -180,24 +182,16 @@ p {
   color: var(--black);
 }
 
+.images-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .images-container img {
   display: block;
-  width: 200px;
+  max-width: 100%;
   height: auto;
-}
-
-.images-left,
-.images-right {
-  position: absolute;
-  top: 10px;
-}
-
-.images-left {
-  left: -130px;
-}
-
-.images-right {
-  right: -130px;
 }
 
 .image {
@@ -210,12 +204,6 @@ p {
   margin-top: -30px;
   position: relative;
   z-index: -1;
-}
-
-.image-2 {
-}
-
-.image-4 {
 }
 
 .relative {
@@ -322,6 +310,20 @@ p {
       width: 230px;
   }
 
+  .images-left,
+  .images-right {
+    position: absolute;
+    top: 10px;
+  }
+
+  .images-left {
+    left: -130px;
+  }
+
+  .images-right {
+    right: -130px;
+  }
+
   .images-left {
       left: 10px;
   }
@@ -351,11 +353,11 @@ p {
   }
 
   .images-left {
-      left: -150px;
+      left: -120px;
   }
 
   .images-right {
-      right: -150px;
+      right: -120px;
   }
 }
 
@@ -368,9 +370,22 @@ p {
   .images-container img {
       width: 300px;
   }
+
+  .images-left {
+      left: -220px;
+  }
+
+  .images-right {
+      right: -220px;
+  }
 }
 
 @media (min-width: 1600px) {
+  body {
+    background-size: 1600px;
+    min-height: 1200px;
+  }
+
   .images-left {
       left: -300px;
   }
