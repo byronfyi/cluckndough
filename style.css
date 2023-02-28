@@ -1,9 +1,19 @@
+/*
+Theme Name: Cluck n Dough
+Description: Wordpress theme for Cluck and Dough
+Author: FYI
+Tested up to: 6.0.2
+Requires PHP: 7.4
+Version: 0.1
+*/
+
 @import url('normalize.css');
 
 @font-face {
   font-family: "Marker Felt";
   font-weight: 400;
   src: url("./Marker-Felt.ttf") format("truetype");
+  font-display: swap;
 }
 
 :root {
@@ -45,7 +55,6 @@ h1 {
   top: 80px;
   left: 50%;
   transform: translateX(-50%);
-  transition: transform 0.2s, top 0.2s;
 }
 
 p {
