@@ -10,8 +10,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/wp-content/themes/cluckndough/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/wp-content/themes/cluckndough/favicon-16x16.png">
     <link rel="manifest" href="/wp-content/themes/cluckndough/site.webmanifest">
-    <link rel="mask-icon" href="/wp-content/themes/cluckndough/safari-pinned-tab.svg" color="#000000">
-    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="mask-icon" href="/wp-content/themes/cluckndough/safari-pinned-tab.svg" color="#f47c2c">
+    <meta name="msapplication-TileColor" content="#f47c2c">
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="/wp-content/themes/cluckndough/style.css">
@@ -27,7 +27,7 @@
         </div>
     </header>
     <main>
-        <div class="container relative">
+        <div class="container">
             <div class="images-container">
                 <div class="images-left">
                     <?php if( get_field('image_1') ): ?>

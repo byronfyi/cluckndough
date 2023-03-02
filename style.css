@@ -122,19 +122,19 @@ p {
 
 .col {
   text-align: center;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   margin-top: 1rem;
 }
 
 .icon-chicken,
 .icon-pizza,
 .icon-chips {
-  width: 70px;
+  width: 60px;
   margin-bottom: 0.5rem;
 }
 
 .icon-chips {
-  width: 60px;
+  width: 50px;
 }
 
 .featured {
@@ -146,7 +146,7 @@ p {
 }
 
 .text {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.4;
   max-width: 74ch;
   margin: 0 auto 2rem;
@@ -215,12 +215,12 @@ p {
 }
 
 .text-lg {
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 
 .text-md {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
 }
 
 .text-orange {
@@ -279,11 +279,11 @@ p {
   }
 
   .images-left {
-    left: -50px;
+      left: -30px;
   }
 
   .images-right {
-    right: -50px;
+      right: -30px;
   }
 }
 
@@ -298,38 +298,18 @@ p {
 
   .images-container {
     display: block;
-    width: 768px;
+    width: 100vw;
     position: absolute;
-    top: -20px;
+    top: -30px;
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
-  }
-
-  .images-container img {
-      width: 230px;
   }
 
   .images-left,
   .images-right {
     position: absolute;
     top: 10px;
-  }
-
-  .images-left {
-    left: -130px;
-  }
-
-  .images-right {
-    right: -130px;
-  }
-
-  .images-left {
-      left: 10px;
-  }
-
-  .images-right {
-      right: 10px;
   }
 }
 
@@ -343,21 +323,7 @@ p {
   }
 
   .images-container {
-    width: 100%;
     height: 600px;
-    top: -30px;
-  }
-
-  .images-container img {
-      width: 230px;
-  }
-
-  .images-left {
-      left: -120px;
-  }
-
-  .images-right {
-      right: -120px;
   }
 }
 
@@ -370,28 +336,12 @@ p {
   .images-container img {
       width: 300px;
   }
-
-  .images-left {
-      left: -220px;
-  }
-
-  .images-right {
-      right: -220px;
-  }
 }
 
 @media (min-width: 1600px) {
   body {
     background-size: 1600px;
     min-height: 1200px;
-  }
-
-  .images-left {
-      left: -300px;
-  }
-
-  .images-right {
-      right: -300px;
   }
 
   .images-container img {
