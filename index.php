@@ -88,8 +88,10 @@
 
             <div class="text">
                 <p class="font-bold text-md text-orange mb-0">Come and see us! Our next event is:</p>
-
-                <p class="font-bold text-md">Friday 7th April  |  The Goats Head, Steeton</p>
+  
+                <?php if( get_field('next_event') ): ?>
+                    <p class="font-bold text-md"><?php the_field('next_event'); ?></p>
+                <?php endif; ?>
             </div>
 
             <ul class="social">
